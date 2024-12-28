@@ -27,8 +27,12 @@ def send_password(message):
 def echo_all(message):
     bot.reply_to(message, message.text)
 
-@bot.message_handler(commands=["ping"])
-def on_ping(message):
+@bot.message_handler(commands=['ping'])
+def send_ping(message):
     bot.reply_to(message, "Still alive and kicking!")
+
+@bot.message_handler(commands=['help'])
+def send_help(message):
+    bot.reply_to(message, "Commands - hello, bye, password, ping")
 
 bot.polling()
