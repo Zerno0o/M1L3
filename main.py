@@ -4,7 +4,7 @@ import random
 
 # Замени 'TOKEN' на токен твоего бота
 # Этот токен ты получаешь от BotFather, чтобы бот мог работать
-bot = telebot.TeleBot("7457293771:AAHZjYKL0bB5UeGltCQ3rGgipm-FwMHK3lk")
+bot = telebot.TeleBot("token")
     
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
